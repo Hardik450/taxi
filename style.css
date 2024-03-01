@@ -1,0 +1,100 @@
+body {
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: blue;
+    color: azure;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 600;
+    position: sticky;
+
+}
+
+li {
+    list-style: none;
+    margin-left: 160px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.img1 {
+    position: absolute;
+    right: 0px;
+
+
+}
+
+
+
+.card {
+    height: 490px;
+    width: 680px;
+    background-color: cornsilk;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+    
+  
+
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    border-style: none;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+.head{
+    font-size: large;
+    font-weight: 500;    
+}
+input{
+    padding:10px 10px 10px 10px;
+    margin: 10px;
+    width: 300px;
+}
+.form{
+    margin-top:140px ;
+}
+.box1{
+    width: 100px;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    margin: 100px;
+    padding-top: 10px;
+    border-radius: 7px;
+    margin-left: 650px;
+}
+main{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    margin-left: 30px;
+}
+.temp{
+    background-color: floralwhite;
+    box-shadow: 0px -1px 5px 5px rgb(140 129 129);
+    height: 380px;
+    width: 270px;
+    margin: 40px;
+    margin-top: 10px;
+    gap: 20px;
+}
