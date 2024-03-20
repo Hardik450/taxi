@@ -35,16 +35,18 @@ display: inline-flex;
         
     }
     nav {
-    display: flex;
-    background-color: black;
+        display: flex;
+    background-color:black;
     color: azure;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
     font-style: normal;
     font-size: 25px;
+    font-weight: 600;
     position: sticky;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
+    z-index:1;
+    top: 0px;
 
 }
 li {
@@ -65,21 +67,57 @@ sup{
     font-weight: 800;
     color: red;
 }
+.address{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer{
+    background-color: rgb(50, 45, 45);
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+
+footer>.foot>p{
+    margin-top: 0px;
+}
+
+.foot{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.block{
+    height: 100px;
+}
+
 </style> 
 </head>
   <body>
+   
     <nav>
-        <li><a href="./home.html">Home</a></li>
+        <li><a href="./index.html">RATHORE TOUR&TRAVELS</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About Us</a></li>
         <li style="border-bottom: 3px solid cyan;"><a href="contact.html">Contact Us</a></li>
-        <li>Our Routes</li>
-        <li>Book Now</li>
     </nav>
     <br>
     <div class="navigation">
     Home <span class="material-symbols-outlined">
         arrow_forward_ios
-        </span> <b style="color: blue;">Contact Us</b>
+        </span> <b style="color: blue;"><a href="contact.html">Contact Us</a></b>
+    </div>
+    <div class="address container">
+        <div><strong>Address:-</strong><br>Shop no. 2, Pungaliya Jain Mandir Khasa Khoti,<br> Nearby Railway Station, Jaipur (Rajasthan)</div>
+        <div><strong>Contact Number:-</strong><br>9462057656<br>7300004376</div>
+        <div><strong>Email Address:-</strong><br>nishantrathore2016@gmail.com</div>
     </div>
     <div class="formdiv">
     <form class="form">
@@ -92,16 +130,51 @@ sup{
         
         <input type="tel" placeholder="Enter Your Mobile Number" class="form-label input" required><sup>*</sup>
         <input type="tel" placeholder="Enter Your Whatsapp Number" class="form-label input" required><sup>*</sup>
+        <input type="text" placeholder="From Which Location" class="form-label input" required><sup>*</sup> 
+        <input type="text" placeholder="To Which Location" class="form-label input" required><sup>*</sup>
+        <input type="date" placeholder="Enter Date" class="form-label input" required><sup>*</sup>
+        <input type="time" placeholder="Enter Time" class="form-label input" required><sup>*</sup>
+        <input type="number" placeholder="Enter Number of Days" class="form-label input" required><sup>*</sup>
+        <select class="input form-label" required>
+            <option value="" disabled selected>Select Your Car</option>
+            <option>Swift Dzire</option>
+            <option>Ennova Cresta</option>
+            <option>Toofan</option>
+            <option>Toyota</option>
+            <option>Ertiga</option>
+            <option>Ennova</option>
+            <option>Tavera</option>
+            <option>Etios</option>
+            
+        </select><sup>*</sup>
         <br>
-        <textarea placeholder="Write Your Message (required)" class="form-label text" required></textarea>
+        <textarea placeholder="Write Your Message" class="form-label text"></textarea>
         <br>
-        <input class="btn btn-primary" type="submit" value="Send Your Message">
+        <input type="checkbox" id="tandc" required><label for="tandc" class="form-check-label">&nbsp;I accept the <a href="terms&conditions.html">Terms and Conditions</a> and will follow all the guidelines during my journey.</label><sup>*</sup>
+        <br>
+        <input class="btn btn-primary book" type="submit" value="Book Taxi">
     </form>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.43602535356!2d75.62574572389256!3d26.88542139000655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1710134848035!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1778.7463998629103!2d75.78557899839478!3d26.91958749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f5ae555701%3A0xcaf3e6cd85aec1a1!2sJaipur%20Junction!5e0!3m2!1sen!2sin!4v1710860344382!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
+
+    <footer>
+        <div class="foot">
+<h1>RATHORE TOUR AND TRAVELS</h1>
+                <h3>shop no.2,</h3>
+                <h3>pungaliya jain mandir,</h3>
+                <h3>railway station road,</h3>
+                <h3> jaipur, Rajasthan-xxxxxx</h3>
+                <h4>(+91)7300004376</h4>
+                <h5>Email</h5>
+            </div>
+            <div class="block">POPULAR ROUTES</div>
+            <div class="block">TRIP FOREVER</div>
+        
+    </footer>
+
 </body>
 
 </html>
