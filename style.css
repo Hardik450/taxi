@@ -86,11 +86,12 @@ input{
     font-size: x-large;
 }
 main{
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
+     display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin-left: 30px;
-}
+    overflow-x: auto;
+    width: 1440px;
 .temp{
     background-color: floralwhite;
     box-shadow: 0px -1px 5px 5px rgb(140 129 129);
