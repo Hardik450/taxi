@@ -161,7 +161,6 @@ section.best>img{
     position: fixed;
     bottom: 0px;
     height: 150px;
-    margin-left: -35px;
 }
 
 
@@ -173,9 +172,8 @@ section.best>img{
 
 footer{
     background-color: rgb(50, 45, 45);
-    width: 1519px;
-    height: 300px;
-    margin-left: -40px;
+    width: 100vw;
+    height: 70vh;
     color: white;
 }
 
