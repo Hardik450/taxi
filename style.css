@@ -131,12 +131,12 @@ section{
     width: 352px;
 }
 
-section.best>img{
+section#best>img{
     object-fit: cover;
     border-radius:9px ;
 }
 
-.best{
+#best{
     border-radius: 9px;
     margin: 20px;
     height: 352px;
@@ -151,12 +151,12 @@ section.best>img{
     row-gap: 15px;
 }
 
-.best>h5>span{
+#best>h5>span{
     color: red;
     font-style: italic;
 }
 
-.best>h1{
+#best>h1{
     color: red;
     font-size: xxx-large;
 
