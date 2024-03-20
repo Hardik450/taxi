@@ -171,10 +171,12 @@ section.best>img{
 }
 
 footer{
-    background-color: rgb(50, 45, 45);
-    width: 100vw;
-    height: 70vh;
+  background-color: rgb(50, 45, 45);
+    width: 99vw;
+    height: 50vh;
     color: white;
+    box-sizing: border-box;
+    margin: -10px;
 }
 
 footer>.foot>p{
