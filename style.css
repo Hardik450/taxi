@@ -23,7 +23,6 @@ nav {
 nav>h3{
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: brown;
 }
 
 nav>li {
@@ -195,3 +194,7 @@ footer>.foot>p{
     height: 100px;
 }
 
+.block>ul>li{
+    list-style: none;
+
+}
